@@ -9,7 +9,9 @@ $(document).ready(function () {
   },
     // je change le text en noir en utilisant le css
     function () {
-      $('#text').css('color', 'black');
+
+      // couleur par default = ihnerit
+      $('#text').css('color', 'inherit');
     });
 });
 
