@@ -1,15 +1,15 @@
 // //quand la page est chargée (ready)
 $(document).ready(function () {
   // quand la souris passe sur une couleur je demande de choisir la class color
+  // hover - quand la souris passe sur les couleurs et qu'lle quite les couleurs
   $('.color').hover(function () {
-    //je récupère la deuxième classe de l'élément sur lequel j'ai cliqué
-    var color = $(this).attr('class').split(' ')[1];
+    //je récupère l'id de couleur'
+    var color = $(this).attr('id');
     // je change le text en fonction de la couleur sur la quelle j'ai appuié
     $('#text').css('color', color);
   },
-    // je change le text en noir en utilisant le css
+    // je change le text en noir en utilisant le css // couleur par default = ihnerit
     function () {
-      // couleur par default = ihnerit
       $('#text').css('color', 'inherit');
     });
 });
